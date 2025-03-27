@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StubbleSmart - Stubble Burning Prevention</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>StubbleSmart: Crop Residue Management</h1>
+        <p>Empowering Punjab and Haryana Farmers</p>
+      </header>
+      <div class="location-selector">
+        <select id="locationDropdown">
+          <option value="">Select a Location</option>
+          <option value="amritsar">Amritsar</option>
+          <option value="jalandhar">Jalandhar</option>
+          <option value="patiala">Patiala</option>
+          <option value="ambala">Ambala</option>
+          <option value="hisar">Hisar</option>
+          <option value="karnal">Karnal</option>
+          <option value="panipat">Panipat</option>
+        </select>
+      </div>
+      <div id="dashboardContent" style="display: none">
+        <div class="dashboard">
+          <div class="card" id="burningRiskCard">
+            <h2>Stubble Burning Risk</h2>
+            <p class="value" id="burningRiskValue">Loading...</p>
+          </div>
+          <div class="card" id="airQualityCard">
+            <h2>Air Quality Index</h2>
+            <p class="value" id="airQualityValue">Loading...</p>
+          </div>
+          <div class="card" id="environmentalImpactCard">
+            <h2>Environmental Impact</h2>
+            <p class="value" id="environmentalImpactValue">Loading...</p>
+          </div>
+        </div>
+        <div class="alternatives">
+          <h2>Sustainable Alternatives</h2>
+          <ul id="alternativesList"></ul>
+        </div>
+        <div class="ai-interaction">
+          <div class="ai-prompt">
+            <input
+              type="text"
+              id="aiPrompt"
+              placeholder="Ask AI about crop residue management..."
+            />
+            <button id="generateAIBtn">Generate AI Insights</button>
+          </div>
+          <div class="loading" id="loadingIndicator">
+            Generating AI Insights...
+          </div>
+          <div id="aiResponse" style="display: none"></div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
